@@ -1,11 +1,16 @@
--   qualification: BSc(Hons) Computer Programming
-    school: Oxford
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-   qualification: "Bachelor of Engineering in Automation"
+    school: "Tsinghua University"
+    period: "2016.08 - 2020.06"
+    description: "GPA 3.91/4.00 <br> Graduate with highest distinction (2%) <br>\
+    Courses&#58 Data Structure, Stochastic Mathematical Methods, Operations Research, Introduction to Artificial Intelligence, Introduction to Systems Engineering, Fundamental Pattern Recognition"
 
--   qualification: A-Level Computing
-    school: Some High School
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-   qualification: Minor in Statistics
+    school: Tsinghua University
+    period: 2018.09 - 2020.01
+    description: GPA 4.00/4.00
 
--   qualification: A-Level Maths
-    school: Some High School
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-   qualification: Exchange Program in Engineering
+    school: University of California, Santa Barbara
+    period: 2018.09 - 2018.12
+    description: GPA 4.00/4.00 <br>Dean's Honor
+
