@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Wenxuan Bao (鲍文轩 in Chinese)
-    - name: Date of Birth
-      value: Feb.26, 1998
     - name: Languages
       value: English, Chinese
 
@@ -21,77 +19,58 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: B.Eng. in Automation, Minor in Statistics
+    - title: B.Eng. in Automation
       institution: Tsinghua University, Beijing, China
       year: 2016 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Graduating Summa Cum Laude (top 2%)
+        - GPA: 3.91/4.00
+    - title: Minor in Statistics
+      institution: Tsinghua University, Beijing, China
+      year: 2018 - 2019
+      description:
+        - GPA: 4.00/4.00
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: University of Illinois Urbana-Champaign
+      year: 2021 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Trustworthy Federated Learning. 
+    - title: Research Intern
+      institution: University of Rochester
+      year: 2019
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Deep Grouping Model for unified perceptual parsing. 
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020
       items: 
-        - Nobel Prize in Physics 
+        - Summa Cum Laude (top 2%)
         - Matteucci Medal
-    - year: 2029
+    - year: 2017, 2019
       items: 
-        - Max Planck Medal
+        - National Scholarship (top 2%)
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Trustworthy Federated Learning
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Non-IIDness
+	- Domain Adaptation
+        - Adversarial Robustness
+	- Fairness
+    - title: Transfer Learning
       items:
-        - Description 1.
-        - Description 2.
+        - Domain Adaptation
+        - Domain Generalization
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> A Cappella, Bass Guitar. 
