@@ -62,9 +62,8 @@
     - title: Trustworthy Federated Learning
       items: 
         - Non-IIDness
-	- Domain Adaptation
         - Adversarial Robustness
-	- Fairness
+        - Fairness
     - title: Transfer Learning
       items:
         - Domain Adaptation
