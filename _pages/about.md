@@ -18,6 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hi! My name is Wenxuan Bao (鲍文轩 in Chinese). I am a third-year Ph.D. student in the <a href='https://cs.illinois.edu/'>Department of Computer Science</a> at the University of Illinois Urbana-Champaign (UIUC). I am in the <a href='https://isail-laboratory.github.io/'>iSAIL Lab</a> and my supervisor is <a href='https://www.hejingrui.org/'>Prof. Jingrui He</a>. Before that, I earned my B.Eng. degree in <a href='https://www.au.tsinghua.edu.cn/'>Automation</a> and a Minor in <a href='http://www.stat.tsinghua.edu.cn/'>Statistics</a> at <a href='https://www.tsinghua.edu.cn/'>Tsinghua University</a>. 
+Hi! My name is Wenxuan Bao (鲍文轩 in Chinese). I am a third-year Ph.D. student in the Department of Computer Science at the <a href='https://illinois.edu/'>University of Illinois Urbana-Champaign (UIUC)</a>. I am in the <a href='https://isail-laboratory.github.io/'>iSAIL Lab</a> and my supervisor is <a href='https://www.hejingrui.org/'>Prof. Jingrui He</a>. Before that, I earned my B.Eng. degree in <a href='https://www.au.tsinghua.edu.cn/'>Automation</a> and a Minor in Statistics at <a href='https://www.tsinghua.edu.cn/'>Tsinghua University</a>. 
+
+My research interests include: federated learning, transfer learning, adversarial robustness, etc. 
 
 
