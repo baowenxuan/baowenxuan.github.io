@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Student @ <a href=''>UIUC CS</a>. 
+subtitle: Ph.D. Student @ UIUC CS. 
 
 profile:
   align: right
@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <p>614 East Daniel Street</p>
+    <p>Room 5165, iSAIL Lab</p>
     <p>Champaign, IL 61820</p>
 
 news: true  # includes a list of news items
@@ -18,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hi! My name is Wenxuan Bao (鲍文轩 in Chinese). I am a third-year Ph.D. student in the Department of Computer Science at the <a href='https://illinois.edu/'>University of Illinois Urbana-Champaign (UIUC)</a>. I am in the <a href='https://isail-laboratory.github.io/'>iSAIL Lab</a> and my supervisor is <a href='https://www.hejingrui.org/'>Prof. Jingrui He</a>. Before that, I earned my B.Eng. degree in <a href='https://www.au.tsinghua.edu.cn/'>Automation</a> and a Minor in Statistics at <a href='https://www.tsinghua.edu.cn/'>Tsinghua University</a>. 
+Hi! My name is Wenxuan Bao (鲍文轩 in Chinese). I am a third-year Ph.D. student in the Department of Computer Science at the <a href='https://illinois.edu/'>University of Illinois Urbana-Champaign (UIUC)</a>. I am in the <a href='https://isail-laboratory.github.io/'>iSAIL Lab</a> and my supervisor is <a href='https://www.hejingrui.org/'>Prof. Jingrui He</a>. Before that, I earned my B.Eng. degree in Automation and a Minor in Statistics at <a href='https://www.tsinghua.edu.cn/'>Tsinghua University</a>. 
 
 My research interests include: federated learning, transfer learning, adversarial robustness, etc. 
 
