@@ -2,7 +2,7 @@
 layout: page
 title: Optimizing the Collaboration Structure in Cross-Silo Federated Learning
 description: We propose FedCollab to alleviate the negative transfer problem in federated learning by clustering clients into non-overlapping coalitions based on their distribution distances and data quantities.
-img: assets/img/FedCollab/overview.pdf
+img: assets/img/FedCollab/overview.png
 importance: 1
 category: work
 ---
