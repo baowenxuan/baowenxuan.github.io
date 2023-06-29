@@ -14,7 +14,10 @@ category: work
 [Jun Wu](https://publish.illinois.edu/junwu3/), 
 [Jingrui He](https://www.hejingrui.org/)
 
-[arxiv](https://arxiv.org/abs/2306.06508) [poster] [slides] [talk] [code] [bibtex]
+\[[arxiv](https://arxiv.org/abs/2306.06508)\] 
+[poster] [slides] [talk] 
+\[[code](https://github.com/baowenxuan/FedCollab)\] 
+[bibtex]
 
 ## Paper Summary
 
