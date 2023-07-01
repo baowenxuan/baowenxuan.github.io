@@ -142,7 +142,7 @@
 
 <h2 id="paper-summary">Paper Summary</h2>
 
-<p>We propose FedCollab to alleviate the negative transfer problem in federated learning by clustering clients into non-overlapping coalitions based on their distribution distances and data quantities.</p>
+<p>We propose FedCollab to alleviate the negative transfer problem in federated learning (FL) by clustering clients into non-overlapping coalitions based on their distribution distances and data quantities.</p>
 <ul>
   <li>Theory: We analyze how clustered FL performance is affected by two key factors: distribution distance and data quantity.</li>
   <li>Algorithm: We propose FedCollab to solve for the best collaboration structure.</li>
@@ -153,9 +153,39 @@
 
 <h2 id="background">Background</h2>
 
-<p>In global Federated Learning (FL), multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the <strong>negative transfer</strong> problem, i.e., the global model can be even worse the local model.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<p><em>What is the optimal clustering structure?</em></p>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/FedCollab/fls-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/FedCollab/fls-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/FedCollab/fls-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/FedCollab/fls.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="learning scenarios" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Comparison of different learning scenarios. 
+</div>
+
+<p>In global FL, multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the <strong>negative transfer</strong> problem, i.e., the global model can be even worse the local model.</p>
+
+<p>Clustered FL groups clients into coalitions based on distributions; each client only shares model with clients in the same coalition.</p>
+
+<p><strong>Question</strong>: <em>What is the optimal clustering structure</em>, i.e., which clients should train shared model?</p>
+
+<hr>
+
+<h2 id="theoretical-analysis">Theoretical Analysis</h2>
 
 <!-- ## Introduction
 
