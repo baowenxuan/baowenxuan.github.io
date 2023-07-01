@@ -187,6 +187,43 @@
 
 <h2 id="theoretical-analysis">Theoretical Analysis</h2>
 
+<p>We consider an FL system with $N$ clients, each client $i$ has $m_i$ samples $\hat{\mathcal{D}}<em>i = {(\boldsymbol{x}_k^{(i)}, \boldsymbol{y}_k^{(i)})}</em>{k=1}^{m_i}$ i.i.d. drawn from its local distribution $\mathcal{D}<em>i$. $h$ is the ML model and $\ell$ is the risk function. Denote the quantity distribution $\boldsymbol{\beta} = [\beta_1, \cdots, \beta_N] = [\frac{m_1}{m}, \cdots, \frac{m_N}{m}]$ where $m = \sum</em>{i=1}^N m_i$.</p>
+<ul>
+  <li>Client $i$’s <em>local empirical risk</em>: $\hat{\epsilon}<em>i(h) = \frac{1}{m_i}\sum</em>{k=1}^{m_i} \ell(h(\boldsymbol{x}_k^{(i)}), \boldsymbol{y}_k^{(i)})$</li>
+  <li>Client $i$’s <em>local expected risk</em>: $\epsilon_i(h) = \mathbb{E}_{(\boldsymbol{x}, \boldsymbol{y}) \in \mathcal{D}_i} \ell(h(\boldsymbol{x}), \boldsymbol{y})$</li>
+</ul>
+
+<p><strong>Theorem 3.3.</strong> (informal) Let $\hat{h}<em>{\boldsymbol{\alpha}_i} = \argmin</em>{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}<em>j(h)$ where $\sum</em>{j=1}^N \alpha_{ij} = 1$. With probability at least $1 - 2\delta$, 
+\(\epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) \leq 
+        \underbrace{\vphantom{\frac ab}\epsilon_i( h_i^* )}_{\text{irreducible error}} + \ 
+        2 \underbrace{\vphantom{\frac ab}\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta)}_{\text{quantity-aware function}} + \ 
+        2 \sum_{j \neq i} \alpha_{ij} \underbrace{\vphantom{\frac ab}D(\mathcal{D}_i, \mathcal{D}_j)}_{\text{distribution distance}}\)
+where</p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>the quantity-aware function $\phi_{</td>
+          <td>\mathcal{H}</td>
+          <td>}(\boldsymbol{\alpha}<em>i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum</em>{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}$, and</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>the distribution distance $D(\mathcal{D}<em>i, \mathcal{D}_j) = \max</em>{h \in \mathcal{H}} \left</td>
+          <td>\epsilon_i(h) - \epsilon_j(h) \right</td>
+          <td>$.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
 <!-- ## Introduction
 
 We consider a FL system with $N$ clients $1, \cdots, N$ connected to a central server. 
