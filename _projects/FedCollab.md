@@ -9,19 +9,22 @@ category: work
 
 # Optimizing the Collaboration Structure in Cross-Silo Federated Learning
 
-[Wenxuan Bao](https://baowenxuan.github.io/), 
-[Haohan Wang](https://haohanwang.github.io/), 
-[Jun Wu](https://publish.illinois.edu/junwu3/), 
-[Jingrui He](https://www.hejingrui.org/)
+[Wenxuan Bao](https://baowenxuan.github.io/)<sup>1</sup>, &nbsp;
+[Haohan Wang](https://haohanwang.github.io/)<sup>1</sup>, &nbsp;
+[Jun Wu](https://publish.illinois.edu/junwu3/)<sup>1</sup>, &nbsp;
+[Jingrui He](https://www.hejingrui.org/)<sup>1</sup>
 
-University of Illinois Urbana-Champaign
+<sup>1</sup>University of Illinois Urbana-Champaign
 
-[\[arxiv\]](https://arxiv.org/abs/2306.06508) 
-[\[poster\]](https://github.com/baowenxuan/FedCollab/blob/master/material/FedCollab_poster.pdf) 
-[\[slides\]](https://github.com/baowenxuan/FedCollab/blob/master/material/FedCollab_slides.pdf) 
-[talk] 
-[\[code\]](https://github.com/baowenxuan/FedCollab) 
-[\[virtual site\]](https://icml.cc/virtual/2023/poster/23569)(registration required)
+ICML 2023 &nbsp;
+[\[arxiv\]](https://arxiv.org/abs/2306.06508) &nbsp;
+[\[poster\]](https://github.com/baowenxuan/FedCollab/blob/master/material/FedCollab_poster.pdf) &nbsp;
+[\[slides\]](https://github.com/baowenxuan/FedCollab/blob/master/material/FedCollab_slides.pdf) &nbsp;
+\[talk\] &nbsp;
+[\[code\]](https://github.com/baowenxuan/FedCollab) &nbsp;
+[\[virtual site (registration required)\]](https://icml.cc/virtual/2023/poster/23569)
+
+------
 
 ## Paper Summary
 
@@ -30,9 +33,12 @@ We propose FedCollab to alleviate the negative transfer problem in federated lea
 - Algorithm: We propose FedCollab to solve for the best collaboration structure.
 - Extensive experiments: We test FedCollab under label shift, feature shift and concept shift with various models / datasets. 
 
+------
+
 ## Background
 
 In global Federated Learning (FL), multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the **negative transfer** problem, i.e., the global model can be even worse the local model. 
+
 
 
 
