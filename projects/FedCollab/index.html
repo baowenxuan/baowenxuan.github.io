@@ -193,7 +193,7 @@
   <li>Client \(i\)’s <em>local expected risk</em>: \(\epsilon_i(h) = \mathbb{E}_{(\boldsymbol{x}, \boldsymbol{y}) \in \mathcal{D}_i} \ell(h(\boldsymbol{x}), \boldsymbol{y})\)</li>
 </ul>
 
-<p><strong>Theorem 3.3.</strong> (informal) Let \(\hat{h}_{\boldsymbol{\alpha}_i} = \argmin_{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}_j(h)\) where \(\sum_{j=1}^N \alpha_{ij} = 1\). With probability at least \(1 - 2\delta\),</p>
+<p><strong>Theorem 3.3.</strong> (informal) Let \(\hat{h}_{\boldsymbol{\alpha}_i} = \text{argmin}_{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}_j(h)\) where \(\sum_{j=1}^N \alpha_{ij} = 1\). With probability at least \(1 - 2\delta\),</p>
 
 <p>\(\epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) \leq 
         \underbrace{\vphantom{\frac ab}\epsilon_i( h_i^* )}_{\text{irreducible error}} + \ 
