@@ -60,7 +60,7 @@ We consider an FL system with $$N$$ clients, each client $$i$$ has $$m_i$$ sampl
 - Client $$i$$'s *local empirical risk*: $$\hat{\epsilon}_i(h) = \frac{1}{m_i}\sum_{k=1}^{m_i} \ell(h(\boldsymbol{x}_k^{(i)}), \boldsymbol{y}_k^{(i)})$$
 - Client $$i$$'s *local expected risk*: $$\epsilon_i(h) = \mathbb{E}_{(\boldsymbol{x}, \boldsymbol{y}) \in \mathcal{D}_i} \ell(h(\boldsymbol{x}), \boldsymbol{y})$$
 
-**Theorem 3.3.** (informal) Let $$\hat{h}_{\boldsymbol{\alpha}_i} = \argmin_{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}_j(h)$$ where $$\sum_{j=1}^N \alpha_{ij} = 1$$. With probability at least $$1 - 2\delta$$, 
+**Theorem 3.3.** (informal) Let $$\hat{h}_{\boldsymbol{\alpha}_i} = \text{argmin}_{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}_j(h)$$ where $$\sum_{j=1}^N \alpha_{ij} = 1$$. With probability at least $$1 - 2\delta$$, 
 
 $$
 \epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) \leq 
