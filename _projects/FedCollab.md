@@ -28,7 +28,7 @@ ICML 2023 &nbsp;
 
 ## Paper Summary
 
-We propose FedCollab to alleviate the negative transfer problem in federated learning by clustering clients into non-overlapping coalitions based on their distribution distances and data quantities. 
+We propose FedCollab to alleviate the negative transfer problem in federated learning (FL) by clustering clients into non-overlapping coalitions based on their distribution distances and data quantities. 
 - Theory: We analyze how clustered FL performance is affected by two key factors: distribution distance and data quantity.
 - Algorithm: We propose FedCollab to solve for the best collaboration structure.
 - Extensive experiments: We test FedCollab under label shift, feature shift and concept shift with various models / datasets. 
@@ -37,14 +37,26 @@ We propose FedCollab to alleviate the negative transfer problem in federated lea
 
 ## Background
 
-In global Federated Learning (FL), multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the **negative transfer** problem, i.e., the global model can be even worse the local model. 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/fls.png" title="learning scenarios" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Comparison of different learning scenarios. 
+</div>
+
+In global FL, multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the **negative transfer** problem, i.e., the global model can be even worse the local model. 
+
+Clustered FL groups clients into coalitions based on distributions; each client only shares model with clients in the same coalition.
+
+**Question**: *What is the optimal clustering structure*, i.e., which clients should train shared model?
+
+------
+
+## Theoretical Analysis
 
 
-
-
-
-
-*What is the optimal clustering structure?*
 
 <!-- ## Introduction
 
