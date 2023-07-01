@@ -56,7 +56,20 @@ Clustered FL groups clients into coalitions based on distributions; each client 
 
 ## Theoretical Analysis
 
+We consider an FL system with $N$ clients, each client $i$ has $m_i$ samples $\hat{\mathcal{D}}_i = \{(\boldsymbol{x}_k^{(i)}, \boldsymbol{y}_k^{(i)})\}_{k=1}^{m_i}$ i.i.d. drawn from its local distribution $\mathcal{D}_i$. $h$ is the ML model and $\ell$ is the risk function. Denote the quantity distribution $\boldsymbol{\beta} = [\beta_1, \cdots, \beta_N] = [\frac{m_1}{m}, \cdots, \frac{m_N}{m}]$ where $m = \sum_{i=1}^N m_i$. 
+- Client $i$'s *local empirical risk*: $\hat{\epsilon}_i(h) = \frac{1}{m_i}\sum_{k=1}^{m_i} \ell(h(\boldsymbol{x}_k^{(i)}), \boldsymbol{y}_k^{(i)})$
+- Client $i$'s *local expected risk*: $\epsilon_i(h) = \mathbb{E}_{(\boldsymbol{x}, \boldsymbol{y}) \in \mathcal{D}_i} \ell(h(\boldsymbol{x}), \boldsymbol{y})$
 
+**Theorem 3.3.** (informal) Let $\hat{h}_{\boldsymbol{\alpha}_i} = \argmin_{h \in \mathcal{H}} \sum_{j=1}^N \alpha_{ij} \hat{\epsilon}_j(h)$ where $\sum_{j=1}^N \alpha_{ij} = 1$. With probability at least $1 - 2\delta$, 
+$$
+\epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) \leq 
+        \underbrace{\vphantom{\frac ab}\epsilon_i( h_i^* )}_{\text{irreducible error}} + \ 
+        2 \underbrace{\vphantom{\frac ab}\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta)}_{\text{quantity-aware function}} + \ 
+        2 \sum_{j \neq i} \alpha_{ij} \underbrace{\vphantom{\frac ab}D(\mathcal{D}_i, \mathcal{D}_j)}_{\text{distribution distance}}
+$$
+where 
+- the quantity-aware function $\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}$, and
+- the distribution distance $D(\mathcal{D}_i, \mathcal{D}_j) = \max_{h \in \mathcal{H}} \left| \epsilon_i(h) - \epsilon_j(h) \right|$. 
 
 <!-- ## Introduction
 
