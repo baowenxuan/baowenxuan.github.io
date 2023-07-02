@@ -70,7 +70,18 @@ $$
 $$
 
 where 
-- the quantity-aware function \(\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta)\)
+- the quantity-aware function 
+
+$$
+\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}
+$$
+
+and
+- the distribution distance
+
+$$
+D(\mathcal{D}_i, \mathcal{D}_j) = \max_{h \in \mathcal{H}} \left| \epsilon_i(h) - \epsilon_j(h) \right|. 
+$$
 
 <!-- - the quantity-aware function $$\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}$$, and
 - the distribution distance $$D(\mathcal{D}_i, \mathcal{D}_j) = \max_{h \in \mathcal{H}} \left| \epsilon_i(h) - \epsilon_j(h) \right|$$.  -->
