@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <p>614 East Daniel Street</p>
-    <p>Room 5165, iSAIL Lab</p>
     <p>Champaign, IL 61820</p>
+    <p> Email: wbao4 at illinois dot edu</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
