@@ -43,7 +43,7 @@ We propose FedCollab to alleviate the negative transfer problem in federated lea
     </div>
 </div>
 <div class="caption">
-    Comparison of different learning scenarios. 
+    Figure 1. Comparison of different learning scenarios. 
 </div>
 
 In global FL, multiple clients collaborate to train a shared machine learning model without sharing their raw data. Although global FL can utilize more data samples, when clients have non-IID data, global FL suffers from the **negative transfer** problem, i.e., the global model can be even worse the local model. 
@@ -73,18 +73,36 @@ where
 - the quantity-aware function 
 
 $$
-\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}
+\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}, 
 $$
 
-and
 - the distribution distance
 
 $$
 D(\mathcal{D}_i, \mathcal{D}_j) = \max_{h \in \mathcal{H}} \left| \epsilon_i(h) - \epsilon_j(h) \right|. 
 $$
 
-<!-- - the quantity-aware function $$\phi_{|\mathcal{H}|}(\boldsymbol{\alpha}_i, \boldsymbol{\beta}, m, \delta) = \sqrt{\left( \sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j} \right) \left( \frac{2d \log (2m + 2) + \log(4 / \delta)}{m} \right)}$$, and
-- the distribution distance $$D(\mathcal{D}_i, \mathcal{D}_j) = \max_{h \in \mathcal{H}} \left| \epsilon_i(h) - \epsilon_j(h) \right|$$.  -->
+Theorem 3.3 above shows that the error upper bound is controlled by (1) collaboration structure, (2) pairwise distribution distances, and (3) data quantities. Therefore, *the optimal collaboration structure (that minimizes the error bound) depends on distribution distances and data quantities*. 
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/intro.png" title="learning scenarios" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="caption">
+    Figure 2. Optimal collaboration structure depends on distribution distances and data quantities. 
+</div>
+
+We consider an FL system with 2 clients, each has the same number of samples. 
+- *Clients prefer collaborators with smaller distribution distances*. In Figure 2(a), the collaboration is only beneficial when distribution distance is small enough. 
+- *Clients with more data are pickier in the choice of collaborators*. In Figure 2(b), the collaboration is only beneficial when quantity is small. 
+
+
+
 
 ------
 
