@@ -38,8 +38,12 @@ We propose FedCollab to alleviate the negative transfer problem in federated lea
 ## Background
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FedCollab/fls.png" title="learning scenarios" class="img-fluid rounded z-depth-1" %}
+    <div class="col">
+    </div>
+    <div class="col-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/fls.png" title="learning scenarios" class="img-fluid" %}
+    </div>
+    <div class="col">
     </div>
 </div>
 <div class="caption">
@@ -88,7 +92,7 @@ Theorem 3.3 above shows that the error upper bound is controlled by (1) collabor
     <div class="col">
     </div>
     <div class="col-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FedCollab/intro.png" title="learning scenarios" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/FedCollab/intro.png" title="learning scenarios" class="img-fluid" %}
     </div>
     <div class="col">
     </div>
@@ -101,10 +105,25 @@ We consider an FL system with 2 clients, each has the same number of samples.
 - *Clients prefer collaborators with smaller distribution distances*. In Figure 2(a), the collaboration is only beneficial when distribution distance is small enough. 
 - *Clients with more data are pickier in the choice of collaborators*. In Figure 2(b), the collaboration is only beneficial when quantity is small. 
 
-
-
-
 ------
+
+## Algorithm: FedCollab
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/overview.png" title="learning scenarios" class="img-fluid" %}
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="caption">
+    Figure 3. Overview of FedCollab. 
+</div>
+
+
+FedCollab minimized the 
 
 
 
