@@ -109,6 +109,8 @@ We consider an FL system with 2 clients, each has the same number of samples.
 
 ## Algorithm: FedCollab
 
+FedCollab solves the collaboration structure bv minimizina an empirical estimation of the error bound in Theorem 3.3. 
+
 <div class="row">
     <div class="col">
     </div>
@@ -122,8 +124,12 @@ We consider an FL system with 2 clients, each has the same number of samples.
     Figure 3. Overview of FedCollab. 
 </div>
 
+**Step 1: Estimate pairwise distribution distance.** Train a client discriminator $$f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}$$ for each pair of clients with FL algorithm. $$|123|$$. 
 
-FedCollab minimized the 
+$$
+\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}
+$$
+
 
 
 
