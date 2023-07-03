@@ -289,18 +289,32 @@
     Figure 3. Overview of FedCollab. 
 </div>
 
-<table>
-  <tbody>
-    <tr>
-      <td>
-<strong>Step 1: Estimate pairwise distribution distance.</strong> Train a client discriminator \(f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}\) for each pair of clients with FL algorithm. $$</td>
-      <td>123</td>
-      <td>$$.</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Step 1: Estimate pairwise distribution distance.</strong> Train a client discriminator \(f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}\) for each pair of clients with FL algorithm. \(\lvert123\rvert\).</p>
 
-\[\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}\]
+<p>\(\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}(f, \{\hat{\mathcal{D}}_i^{\text{valid}}, 1\} \cup \{\hat{\mathcal{D}}_j^{\text{valid}}, 0\}) - 1\)</p>
+<ul>
+  <li>When $\mathcal{D}<em>i, \mathcal{D}_j$ are distinctly different, balanced accuracy $\approx 100\%$ and $\hat{D}</em>{ij} \approx 1$.</li>
+  <li>When $\mathcal{D}<em>i, \mathcal{D}_j$ are similar, the classifier cannot outperform random guessing whose balanced accuracy $\approx 50\%$ and $\hat{D}</em>{ij} \approx 0$.</li>
+</ul>
+
+<p><strong>Step 2: Optimizethe collaboration structure.</strong> Minimize the sum of empirical error upper bounds with greedy method.</p>
+
+\[\mathcal{L}(\boldsymbol{A}, \boldsymbol{\beta}, m, \hat{\boldsymbol{D}}) = \sum_{i=1}^N \left( \frac{C}{\sqrt{m}} \sqrt{\sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j}} + \sum_{j=1}^N \alpha_{ij} \hat{D}_{ij} \right)\]
+
+<p>where \(C\) is a hyperparameter and the collaboration structure</p>
+
+\[\boldsymbol{A}_{ij} = \alpha_{ij} = \begin{cases}
+            \frac{\beta_j}{\sum_{l \in \mathcal{C}_k} \beta_l}, &amp; \text{if } i \in \mathcal{C}_k, j \in \mathcal{C}_k, \exists \text{ coalition } k \\
+            0, &amp; \text{otherwise}
+        \end{cases}\]
+
+<p><strong>Step 3: FL within each coalition.</strong> Notice that since the collaboration structure and the FL model are optimized independently, FedCollab can be seamlessly integrated with any GFL or PFL algorithms in this stage.</p>
+
+<hr>
+
+<h2 id="experiments">Experiments</h2>
+
+<p><strong>Setup.</strong> We</p>
 
 
           </article>
