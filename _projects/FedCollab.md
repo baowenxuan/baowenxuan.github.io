@@ -124,12 +124,35 @@ FedCollab solves the collaboration structure bv minimizina an empirical estimati
     Figure 3. Overview of FedCollab. 
 </div>
 
-**Step 1: Estimate pairwise distribution distance.** Train a client discriminator $$f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}$$ for each pair of clients with FL algorithm. $$|123|$$. 
+**Step 1: Estimate pairwise distribution distance.** Train a client discriminator $$f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}$$ for each pair of clients with FL algorithm. $$\lvert123\rvert$$. 
 
 $$
-\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}
+\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}(f, \{\hat{\mathcal{D}}_i^{\text{valid}}, 1\} \cup \{\hat{\mathcal{D}}_j^{\text{valid}}, 0\}) - 1
+$$
+- When $\mathcal{D}_i, \mathcal{D}_j$ are distinctly different, balanced accuracy $\approx 100\%$ and $\hat{D}_{ij} \approx 1$. 
+- When $\mathcal{D}_i, \mathcal{D}_j$ are similar, the classifier cannot outperform random guessing whose balanced accuracy $\approx 50\%$ and $\hat{D}_{ij} \approx 0$. 
+
+**Step 2: Optimizethe collaboration structure.** Minimize the sum of empirical error upper bounds with greedy method. 
+
+$$
+\mathcal{L}(\boldsymbol{A}, \boldsymbol{\beta}, m, \hat{\boldsymbol{D}}) = \sum_{i=1}^N \left( \frac{C}{\sqrt{m}} \sqrt{\sum_{j=1}^N \frac{\alpha_{ij}^2}{\beta_j}} + \sum_{j=1}^N \alpha_{ij} \hat{D}_{ij} \right) 
 $$
 
+where $$C$$ is a hyperparameter and the collaboration structure
 
+$$
+\boldsymbol{A}_{ij} = \alpha_{ij} = \begin{cases}
+            \frac{\beta_j}{\sum_{l \in \mathcal{C}_k} \beta_l}, & \text{if } i \in \mathcal{C}_k, j \in \mathcal{C}_k, \exists \text{ coalition } k \\
+            0, & \text{otherwise}
+        \end{cases}
+$$
+
+**Step 3: FL within each coalition.** Notice that since the collaboration structure and the FL model are optimized independently, FedCollab can be seamlessly integrated with any GFL or PFL algorithms in this stage. 
+
+------
+
+## Experiments
+
+**Setup.** We 
 
 
