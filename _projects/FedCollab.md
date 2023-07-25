@@ -154,6 +154,22 @@ $$
 
 ## Experiments
 
-**Setup.** We 
+**Setup.** We consider 20 clients with unlabanced data quantities $$\beta_0 = \cdots = \beta_9 \gg \beta_{10} = \cdots = \beta_{19}$$. We consider three kinds of distribution shifts: label shift, feature shift and concept shift. 
 
+- Label shift: each client has different label distribution. 
+- Feature shift: each client's image is rotated at different angles. 
+- Concept shift: each client's label is permuted. 
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-12 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/exp_setup.png" title="experiment setup" class="img-fluid" %}
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="caption">
+    Figure 3. Three kinds of distribution shifts among clients. 
+</div>
 
