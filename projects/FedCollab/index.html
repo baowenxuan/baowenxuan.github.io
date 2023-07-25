@@ -291,10 +291,11 @@
 
 <p><strong>Step 1: Estimate pairwise distribution distance.</strong> Train a client discriminator \(f: \mathcal{X} \times \mathcal{Y} \to \{0, 1\}\) for each pair of clients with FL algorithm. \(\lvert123\rvert\).</p>
 
-<p>\(\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}(f, \{\hat{\mathcal{D}}_i^{\text{valid}}, 1\} \cup \{\hat{\mathcal{D}}_j^{\text{valid}}, 0\}) - 1\)</p>
+\[\hat{D}_{ij} = 2 \cdot \text{BalancedAccuracy}(f, \{\hat{\mathcal{D}}_i^{\text{valid}}, 1\} \cup \{\hat{\mathcal{D}}_j^{\text{valid}}, 0\}) - 1\]
+
 <ul>
-  <li>When $\mathcal{D}<em>i, \mathcal{D}_j$ are distinctly different, balanced accuracy $\approx 100\%$ and $\hat{D}</em>{ij} \approx 1$.</li>
-  <li>When $\mathcal{D}<em>i, \mathcal{D}_j$ are similar, the classifier cannot outperform random guessing whose balanced accuracy $\approx 50\%$ and $\hat{D}</em>{ij} \approx 0$.</li>
+  <li>When \(\mathcal{D}_i, \mathcal{D}_j\) are distinctly different, balanced accuracy \(\approx 100\%\) and \(\hat{D}_{ij} \approx 1\).</li>
+  <li>When \(\mathcal{D}_i, \mathcal{D}_j\) are similar, the classifier cannot outperform random guessing whose balanced accuracy \(\approx 50\%\) and \(\hat{D}_{ij} \approx 0\).</li>
 </ul>
 
 <p><strong>Step 2: Optimizethe collaboration structure.</strong> Minimize the sum of empirical error upper bounds with greedy method.</p>
