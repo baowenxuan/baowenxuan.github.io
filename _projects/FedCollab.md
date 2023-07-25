@@ -176,7 +176,7 @@ $$
 **FedCollab alleviates negative transfer for both global FL and personalized FL**
 
 <div class="caption">
-    Table 1. Alleviating negative transfer of base GFL and PFL algorithms with different models, datasets, and types of non-IIDness, where we report the mean and standard deviation for each evaluation metric in percentage (\%) after five runs.
+    Table 1. Alleviating negative transfer of base GFL and PFL algorithms with different models, datasets, and types of non-IIDness, where we report the mean and standard deviation for each evaluation metric in percentage (%) after five runs.
 </div>
 <div class="row">
     <div class="col">
@@ -189,7 +189,7 @@ $$
 </div>
 
 
-- IPR - \% of clients with $$\epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) < \epsilon_i(\hat{h}_{i})$$, i.e., FL model is better than local model
+- IPR - % of clients with $$\epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) < \epsilon_i(\hat{h}_{i})$$, i.e., FL model is better than local model
 - RSD - standard deviation of $$\{ \epsilon_i(\hat{h}_{i}) - \epsilon_i(\hat{h}_{\boldsymbol{\alpha}_i}) \}_{i=1}^N$$, i.e., whether clients have uniform accuracy gains
 
 **FedCollab outperforms previous clustered FL algorithms**
