@@ -223,3 +223,18 @@ $$
     Figure 4. Client distance matrices on CIFAR-10 with feature shift. 
 </div>
 
+------
+
+## Citation
+
+If you find this paper helpful to your research, please consider citing our paper: 
+
+```
+@InProceedings{bao23b,
+  title = 	 {Optimizing the Collaboration Structure in Cross-Silo Federated Learning},
+  author =       {Bao, Wenxuan and Wang, Haohan and Wu, Jun and He, Jingrui},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  year = 	 {2023}
+}
+```
+
