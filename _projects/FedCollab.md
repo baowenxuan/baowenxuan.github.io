@@ -182,7 +182,7 @@ $$
     <div class="col">
     </div>
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FedCollab/table1.png" title="experiment setup" class="img-fluid" %}
+        {% include figure.html path="assets/img/FedCollab/table1.png" title="table1" class="img-fluid" %}
     </div>
     <div class="col">
     </div>
@@ -201,7 +201,7 @@ $$
     <div class="col">
     </div>
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FedCollab/table2.png" title="experiment setup" class="img-fluid" %}
+        {% include figure.html path="assets/img/FedCollab/table2.png" title="table2" class="img-fluid" %}
     </div>
     <div class="col">
     </div>
@@ -209,3 +209,17 @@ $$
 
 - FedCollab explicitly uses the quantity distribution during collaboration optimization. 
 - FedCollab estimates high quality distribution distances. 
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/FedCollab/dists.png" title="distances" class="img-fluid" %}
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="caption">
+    Figure 4. Client distance matrices on CIFAR-10 with feature shift. 
+</div>
+
