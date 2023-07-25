@@ -315,7 +315,41 @@
 
 <h2 id="experiments">Experiments</h2>
 
-<p><strong>Setup.</strong> We</p>
+<p><strong>Setup.</strong> We consider 20 clients with unlabanced data quantities \(\beta_0 = \cdots = \beta_9 \gg \beta_{10} = \cdots = \beta_{19}\). We consider three kinds of distribution shifts: label shift, feature shift and concept shift.</p>
+
+<ul>
+  <li>Label shift: each client has different label distribution.</li>
+  <li>Feature shift: each client’s image is rotated at different angles.</li>
+  <li>Concept shift: each client’s label is permuted.</li>
+</ul>
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-12 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/FedCollab/exp_setup-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/FedCollab/exp_setup-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/FedCollab/exp_setup-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/FedCollab/exp_setup.png" class="img-fluid" width="auto" height="auto" title="experiment setup" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="caption">
+    Figure 3. Three kinds of distribution shifts among clients. 
+</div>
 
 
           </article>
