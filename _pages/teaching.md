@@ -2,9 +2,9 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: 
 nav: true
 nav_order: 5
 ---
 
-I am currently the TA of CS 412: Introduction to Data Mining. 
+I was the TA of <a href='http://tonghanghang.org/course/cs412s23/cs412s2023.html'>CS 412: Introduction to Data Mining</a>. 
