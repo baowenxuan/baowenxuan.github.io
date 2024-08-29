@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **BOBA: Byzantine-Robust Federated Learning with Label Skewness** is accepted by <a href='https://aistats.org/aistats2024/index.html'>AISTATS 2024</a>. While <a href='https://arxiv.org/abs/2208.12932'>here</a> is an stale version of our paper, we will release the updated paper and code soon! 
+Our paper <a href='https://proceedings.mlr.press/v238/bao24a.html'>**BOBA: Byzantine-Robust Federated Learning with Label Skewness**</a> is accepted by <a href='https://aistats.org/aistats2024/index.html'>AISTATS 2024</a>. Our code is realeased <a href='https://github.com/baowenxuan/BOBA/tree/master'>here</a>. 
