@@ -1,6 +1,9 @@
 "He":
   - firstname: ["Jingrui", "J."]
     url: https://www.hejingrui.org/
+    
+  - firstname: ["Xinrui", "X."]
+    url: https://scholar.google.com/citations?user=crCQxs0AAAAJ
 
 "Tong":
   - firstname: ["Hanghang", "H."]
@@ -14,10 +17,6 @@
   - firstname: ["Tianxin", "T."]
     url: https://weitianxin.github.io/
 
-"He":
-  - firstname: ["Xinrui", "X."]
-    url: https://scholar.google.com/citations?user=crCQxs0AAAAJ
-
 "Qiu":
   - firstname: ["Ruizhong", "R."]
     url: https://q-rz.github.io/
@@ -30,15 +29,14 @@
   - firstname: ["Zhining", "Z."]
     url: https://zhiningliu.com/
 
-"Xu":
-  - firstname: ["Zhe", "Z.", "Price"]
-    url: https://pricexu.github.io/
-  
 "Wang":
   - firstname: ["Haohan", "H."]
     url: https://haohanwang.github.io/
 
 "Xu": 
+  - firstname: ["Zhe", "Z.", "Price"]
+    url: https://pricexu.github.io/
+
   - firstname: ["Chenliang", "C."]
     url: https://www.cs.rochester.edu/~cxu22/
 
