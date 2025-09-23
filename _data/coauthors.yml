@@ -13,6 +13,10 @@
   - firstname: ["Jun", "J."]
     url: https://publish.illinois.edu/junwu3/
 
+"Chen":
+  - firstname: ["Yifan", "Y."]
+    url: https://ychen-stat-ml.github.io/
+
 "Wei":
   - firstname: ["Tianxin", "T."]
     url: https://weitianxin.github.io/
@@ -28,6 +32,14 @@
 "Liu":
   - firstname: ["Zhining", "Z."]
     url: https://zhiningliu.com/
+
+"Lin":
+  - firstname: ["Xiao", "X."]
+    url: https://www.linkedin.com/in/xiao-lin-16bb2228a/
+
+"Yan":
+  - firstname: ["Yuchen", "Y."]
+    url: https://www.linkedin.com/in/yuchen-yan-442711291/
 
 "Wang":
   - firstname: ["Haohan", "H."]
